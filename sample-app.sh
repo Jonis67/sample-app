@@ -39,7 +39,7 @@ docker build -t sampleapp .
 docker rm -f samplerunning 2>/dev/null || true
 
 # Ejecutar el nuevo contenedor
-docker run -t -d -p 8080:8080 --name samplerunning sampleapp
+docker run -t -d -p 5050:5050 --name samplerunning sampleapp
 
 # Mostrar los contenedores
 docker ps -a
